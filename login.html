@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="resources/css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="resources/css/style.css" type="text/css">
-    <title>IBCP Member System | Login</title>
+    <title>Login</title>
 </head>
 <body class="text-center bg-img">
     
@@ -14,49 +14,20 @@
         <img class="mb-4" src="https://cdn.iconscout.com/public/images/icon/free/png-256/kakaotalk-logo-social-media-communication-331a1f10bd995dcf-256x256.png" alt="" width="150" height="150">
         <h1 class="h3 mb-3 font-weight-normal text">Please sign in</h1>
         <label for="inputUsername" class="sr-only">Username</label>
-        <input type="email" id="username" class="form-control" placeholder="Username"  required autofocus>
+        <input type="text" id="username" class="form-control" placeholder="Username" autofocus>
         <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" id="password" class="form-control" placeholder="Password" required>
+        <input type="password" id="password" class="form-control" placeholder="Password">
         <div class="checkbox mb-3">
             <label class="text">
                 <input type="checkbox" value="remember-me" > Remember me
             </label>
         </div>
-        <button class="btn btn-lg btn-black btn-block" type="submit" id="login">Login</button>
+        <button class="btn btn-lg btn-black btn-block" type="button" id="login">Login</button>
         <p class="mt-5 mb-3 text-muted">&copy; Copyright DevWar 2018</p>
     </form>
 
     <script src="resources/js/jquery-slim.min.js"></script>
     <script src="resources/js/popper.min.js"></script>
     <script src="resources/js/bootstrap.min.js"></script>
-
-    <!-- Custom Script -->
-
-    <script type="text/javascript">
-        var defUser = "admin";
-        var defPass = "admin";
-
-        document.querySelector("#login").addEventListener("click", function() {
-            var username = document.getElementById("username").value;
-            var password = document.getElementById("password").value;
-            if (username === defUser && password === defPass) {
-                alert("You got it right boi! ");
-            }
-            else if (username === "" && password === "") {
-                alert("Empty Fields. ");
-            }
-            else if (username === "") {
-                alert("Username is empty. ");
-            }
-            else if (password === "") {
-                alert("Password is empty. ");
-            }
-            else {
-                alert("Wrong username and password. ");
-                document.getElementById("username").value = "";
-                document.getElementById("password").value = "";
-            }
-        });
-    </script>
 </body>
 </html>
