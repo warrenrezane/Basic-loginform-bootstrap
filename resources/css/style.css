@@ -4,7 +4,7 @@ body {
 }
 
 .bg-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.8)), url(img/bg3.jpeg);
+  background-image: linear-gradient(rgba(160, 160, 160, 0.555), rgba(0, 0, 0, 0.8)), url(img/bg3.jpeg);
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
